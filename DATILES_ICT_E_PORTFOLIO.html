@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            margin: 0;
+            padding: 0;
+            color: #3b2e2b;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #7c4d20;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #7c4d20;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            border-radius: 10px;
+            background-size: cover;
+            color: white;
+        }
+        .active { display: block; }
+        button {
+            margin-top: 20px;
+        }
+        form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #7c4d20;
+            padding: 10px;
+            text-align: left;
+        }
+        .welcome {
+    background-image: url('welcome-bg.jpg');
+}
+
+.form-section {
+    background-image: url('form-bg.jpg');
+}
+
+.nav-section {
+    background-image: url('nav-bg.webp');
+}
+
+.lessons, .activities, .applications {
+    background-image: url('content-bg.jpg');
+}
+
+.reflection {
+    background-image: url('reflection-bg.jpg');
+}
+
+.feedback {
+    background-image: url('feedback-bg.jpg');
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Welcome to My E-Portfolio</h1>
+            <nav hidden="hidden" id="navBar">
+                <a href="#" onclick="showNext('lessons')">Lessons</a>
+                <a href="#" onclick="showNext('activities')">Activities</a>
+                <a href="#" onclick="showNext('applications')">Application of Lessons</a>
+            </nav>
+        </div>
+        <section id="welcome" class="active welcome">
+            <h2>Welcome</h2>
+            <p>Hello, my name is Miguel Alejandro Galeon (G.) Datiles. I am 14 years of age as I was born on a Saturday; January 2, 2010. I have a few hobbies including but not limited to: Playing ML, biking, playing badminton, wall-climbing, running, dancing, acting, etc. This is my E-portfolio for the 1st quarter of ICT-9.</p>
+            <button onclick="showNext('formEntry')">Next</button>
+        </section>
+
+        <section id="formEntry" class="form-section">
+            <h2>Enter Your Details</h2>
+            <form action="" onsubmit="toggle();">
+                <label>Name: <input type="text" required></label><br>
+                <label>Birthdate: <input type="date" required></label><br>
+                <legend>Address:</legend>
+                <label><input type="radio" name="address" value="Antarctica" checked> Antarctica</label><br>
+                <label><input type="radio" name="address" value="Africa"> Africa</label><br>
+                <label><input type="radio" name="address" value="Asia"> Asia</label><br>
+                <label><input type="radio" name="address" value="Australia"> Australia</label><br>
+                <label><input type="radio" name="address" value="Europe"> Europe</label><br>
+                <label><input type="radio" name="address" value="North America"> North America</label><br>
+                <label><input type="radio" name="address" value="South America"> South America</label><br>
+                <label>Favorite Color:
+                    <select required>
+                        <option value="purple">Purple</option>
+			<option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="yellow">Yellow</option>
+
+                    </select>
+                </label><br>
+                <input type="submit" value="Submit" >
+            </form>
+        </section>
+
+
+        <section id="lessons" class="lessons">
+            <h2>Lessons</h2>
+            <table>
+                <tr><th>Lesson Links</th></tr>
+                <tr><td><a href="C:\Users\Miguel\OneDrive\Documents\Migs Grade 9\ICT\l1.html" target="_blank">Lesson 2</a></td></tr>
+<tr>
+    <td><a href="l2.html" target="_blank">Lesson 2</a></td>
+</tr>
+<tr>
+    <td><a href="l3.html" target="_blank">Lesson 3</a></td>
+</tr>
+<tr>
+    <td><a href="l4.html" target="_blank">Lesson 4</a></td>
+</tr>
+<tr>
+    <td><a href="l5.html" target="_blank">Lesson 5</a></td>
+</tr>
+<tr>
+    <td><a href="l6.html" target="_blank">Lesson 6</a></td>
+</tr>
+<tr>
+    <td><a href="l7.html" target="_blank">Lesson 7</a></td>
+</tr>
+<tr>
+    <td><a href="l8.html" target="_blank">Lesson 8</a></td>
+</tr>
+<tr>
+    <td><a href="l9.html" target="_blank">Lesson 9</a></td>
+</tr>
+
+            </table>
+            <button onclick="showNext('activities')">Next</button>
+            <button onclick="showNext('reflection')">Done</button>
+        </section>
+
+        <section id="activities" class="activities">
+            <h2>Activities</h2>
+            <table>
+                <tr><th>Activity Links</th></tr>
+<tr><td><a href="1.html" target="_blank">Lesson 1</a></td></tr>
+<tr>
+    <td><a href="2.html" target="_blank">Lesson 2</a></td>
+</tr>
+<tr>
+    <td><a href="3.html" target="_blank">Lesson 3</a></td>
+</tr>
+<tr>
+    <td><a href="4.html" target="_blank">Lesson 4</a></td>
+</tr>
+<tr>
+    <td><a href="5.html" target="_blank">Lesson 5</a></td>
+</tr>
+<tr>
+    <td><a href="6.html" target="_blank">Lesson 6</a></td>
+</tr>
+<tr>
+    <td><a href="7.html" target="_blank">Lesson 7</a></td>
+</tr>
+<tr>
+    <td><a href="8.html" target="_blank">Lesson 8</a></td>
+</tr>
+<tr>
+    <td><a href="9.html" target="_blank">Lesson 9</a></td>
+</tr>
+
+            </table>
+            <button onclick="showNext('applications')">Next</button>
+            <button onclick="showNext('reflection')">Done</button>
+        </section>
+
+        <section id="applications" class="applications">
+            <h2>Application of Lessons</h2>
+            <table>
+                <tr><th>Lesson</th><th>Description</th></tr>
+                <tr><td>XHTML</td><td>Used in web pages requiring strict XML compliance, ensuring better compatibility with different browsers and devices.</td></tr>
+                <tr>
+                        <td>HTML</td>
+                        <td>Structures content for websites, emails, and online applications.</td>
+                    </tr>
+                    <tr>
+                        <td>Lists</td>
+                        <td>Organizing content such as navigation menus, item lists, and steps in instructions.</td>
+                    </tr>
+                    <tr>
+                        <td>Tables</td>
+                        <td>Displaying tabular data like schedules, comparisons, and statistics effectively.</td>
+                    </tr>
+                    <tr>
+                        <td>Hyperlinks</td>
+                        <td>Connecting to other web pages, external resources, or downloadable content to enhance navigation and user experience.</td>
+                    </tr>
+                    <tr>
+                        <td>Forms</td>
+                        <td>Collecting user data for registrations, surveys, feedback, and online purchases.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Styling web pages to improve aesthetics, layout, and responsiveness across devices.</td></tr>
+            </table>
+            <button onclick="showNext('lessons')">Restart</button>
+            <button onclick="showNext('reflection')">Done</button>
+        </section>
+
+        <section id="reflection" class="reflection">
+            <button onclick="showNext('feedback')">Done</button>
+            <h2>Reflection</h2>
+            <p>This first quarter in ICT 9 had its challenges and positives. I struggled with the memorization involved in coding, which sometimes felt overwhelming. However, the hands-on activities were enjoyable, and the logic part was fun, and I was lucky to have Neeco as my partner. We worked well together, helping each other through the tasks and sharing ideas. I was also lucky that I got the groupmates I did, since they made my life easier. I also often turned to W3Schools for guidance, which allowed me to better understand coding concepts and apply them in our activities.</p>
+
+            <p>As a Grade 9 ICT student, learning XHTML and HTML has been an eye-opening experience. I’ve delved into the structure of web pages, understanding how elements like lists and tables organize content effectively. Hyperlinks have shown me the importance of navigation, while forms have highlighted user interaction. CSS has been the ultimate tool for enhancing the visual appeal, allowing me to apply styles and layouts creatively. Overall, this knowledge not only builds my technical skills but also boosts my confidence in web development.</p>
+
+            <p>Outside of class, I spent a lot of time playing Mobile Legends. Reaching Top 29 Carmilla in Pamplona Tres and finally achieving Mythic rank was a big accomplishment for me. I enjoyed exploring different game modes such as Ranked(rg), Classic(cl), Brawl(br), and Magic Chess(mc; coincidentally, Minecraft is also mc, but I haven't played that in a while), but I got really into Magic Chess for a while, playing it more than ranked matches. Most of my matches were solo, but I occasionally teamed up with friends like David and Clark, which made the experience even better, however, that's only in rg, cl, and br, I've yet to team up with others in mc despite inviting them numerous times.</p>
+
+            <p>Watching anime also became a big part of my routine, mixing perfectly with my gaming sessions as when I got bored of one then I'd go to the other and when I got bored of that I'd go back, on and on and on. These two replaced my previous habits; I used to spend a lot of time on YouTube, which replaced playing Subway Surfers, which replaced scrolling through TikTok. Now, gaming and anime have taken the forefront in my daily life.</p>
+            <p>Socializing has been a struggle for me. I used to put a lot of effort into making friends, but after facing much disappointment, I started focusing more on my digital hobbies. Real-life friendships often felt shallow, leaving me feeling isolated. The connection I thought I had with Chesca felt uncertain, especially after things fell apart with Reeza, who I once relied on. When I learned that Chanel was spreading lies about me, it honestly hit hard, made me feel very betrayed and made me feel even more lonely.</p>
+            <p>I was seriously concerned when Jude encouraged me to take a depression test. Getting 48/50 (with 30 being depressed already according to the test), made me to think about my feelings and struggles. I’ve noticed that my relationship with Reeza has changed, and it pains me to see that distance grow. I’ve always looked for true friendships, but it feels like a constant struggle to find people who genuinely understand and accept me.</p>
+            <p>Marinas’ coldness has been particularly hurtful. We used to be close friends, and I even taught him how to socialize. Now, it feels like he looks down on me, which is frustrating and painful.</p>
+
+            <p>Recently, I’ve noticed my discipline slipping, and I’ve lost some of my passion for things I used to enjoy. The digital world has become a comforting escape, but it also highlights how challenging it is to find real connections in everyday life.</p>
+
+            <p>As I reflect on this past quarter, I realize that I need to find a better balance. While coding in ICT was enjoyable and educational, I must also confront my feelings of loneliness and the challenges in my friendships. I hope to find ways to connect with others more meaningfully while continuing to explore my interests in technology, gaming, and anime. This journey is important to me, and I want to work on building stronger, more genuine relationships in the future.</p>
+            <label><p>(Some pictures I took with Chanel)</p></label><img src="Screenshot_2024-08-18-15-26-44-10_99c04817c0de5652397fc8b56c3b3817.jpg" alt="pic">
+            <label><p>(ML recording for Chesca to learn draft pick)</p></label><video src="screen-recorder-unlimited-2024-09-28-22-52-24.mp4" alt="vid" width="720" height="400" controls>
+            <button onclick="showNext('feedback')">Next</button>
+        </section>
+
+        <section id="feedback" class="feedback">
+            <h2>Your Feedback</h2>
+            <form onsubmit="return feedback();">
+                <label>Opinion on my E-Portfolio:
+                <br><textarea rows="5" cols="25"></textarea></label><br>
+                <label>Will you show it to others?<br>
+                    <select name="show?" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </label><br>
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </section>
+    </div>
+
+    <script>  
+        function showNext(sectionId) {  
+            const sections = document.querySelectorAll('section');  
+            sections.forEach(section => section.classList.remove('active'));  
+            document.getElementById(sectionId).classList.add('active'); 
+
+            if(sectionId==='feedback')
+                toggle();
+        }  
+
+        function toggle(){
+            let element = document.getElementById("navBar");
+            let hidden = element.getAttribute("hidden");
+            
+            if (hidden) {
+                element.removeAttribute("hidden");
+                alert("Thanks po!");  
+                showNext('lessons');  
+                event.preventDefault();  
+            } else {
+                element.setAttribute("hidden", "hidden");
+            }
+        }
+        function feedback(){
+            let element = document.getElementById("navBar");
+            let hidden = element.getAttribute("hidden");
+            
+            element.setAttribute("hidden", "hidden");
+            alert("Thanks po!");  
+            showNext('welcome');  
+            event.preventDefault();  
+        }
+    </script>
+</body>
+</html>
